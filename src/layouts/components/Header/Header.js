@@ -15,13 +15,18 @@ function Header() {
     return (
         <Navbar expand="sm" bsPrefix={cx('bg-body-tertiary navbar')}>
             <Container>
-                <Row className="align-items-center">
+                <Row className="align-items-center justify-content-center">
                     <Col xs={6} md={{ span: 2, offset: 0 }}>
                         <Navbar.Brand href={config.routes.home}>
                             <Image src={images.logo} fluid />
                         </Navbar.Brand>
                     </Col>
-                    <Col xs={{ offset: 4 }} sm={{ offset: 0 }} md={{ offset: 0 }}>
+                    <Col
+                        className="d-flex justify-content-end"
+                        xs={{ offset: 4 }}
+                        sm={{ offset: 0 }}
+                        md={{ offset: 0 }}
+                    >
                         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-sm`} />
                         <Navbar.Offcanvas
                             id={`offcanvasNavbar-expand-xxl`}

@@ -1,17 +1,15 @@
 import classNames from 'classnames/bind';
 import style from './Home.module.scss';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import BillBoard from '~/components/BillBoard';
+import Reviews from '~/components/Reviews';
 
 const cx = classNames.bind(style);
 function Home() {
     return (
-        <Container fluid bsPrefix={cx('main-view')}>
-            <Row>
-                <Col bsPrefix={cx('billboard')}>
-                    <BillBoard />
-                </Col>
-            </Row>
+        <Container bsPrefix={cx('main-view')}>
+            <BillBoard />
+            <Reviews />
         </Container>
     );
 }

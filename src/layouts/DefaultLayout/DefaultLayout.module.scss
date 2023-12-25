@@ -3,6 +3,7 @@
     background-color: var(--background-color);
     flex-direction: column;
     align-items: center;
+    height: 10000px;
 }
 
 .container {
@@ -12,4 +13,8 @@
 
 .content {
     flex: 1;
+}
+
+iframe#webpack-dev-server-client-overlay {
+    display: none !important;
 }

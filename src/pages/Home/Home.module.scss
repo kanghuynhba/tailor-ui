@@ -2,8 +2,13 @@
     padding-left: 0;
     padding-right: 0;
 }
-
-.billboard {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+.review {
+    margin: 0 !important;
+    height: 500px;
+    width: 100%;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
 }
