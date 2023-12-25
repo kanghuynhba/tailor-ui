@@ -1,5 +1,5 @@
 @import 'normalize.css';
-@import url('https://fonts.googleapis.com/css2?famil=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Roboto:wght@300;400;500;700&display=swap');
 :root {
     --primary: #0b422f;
     --black: #000;
@@ -8,7 +8,7 @@
     --text-color: #161823;
     --hover-color: rgba(22, 24, 35, 0.03);
 
-    --font-family: 'Roboto', sans-serif;
+    --font-family: 'Roboto Playfair Display', sans-serif;
     // Default layout
     --default-layout-header-height: 68px;
     --default-layout-width: 1150px;

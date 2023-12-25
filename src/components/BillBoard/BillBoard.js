@@ -1,27 +1,22 @@
 import classNames from 'classnames/bind';
 import style from './BillBoard.module.scss';
-import { Carousel, Image, OverlayTrigger } from 'react-bootstrap';
+import { Carousel, Image } from 'react-bootstrap';
 import images from '~/assets/images';
+import Content from './Content/Content';
 
 const cx = classNames.bind(style);
 function BillBoard() {
+    const items = [images.thumbnail_1, images.thumbnail_2, images.thumbnail_3];
     return (
-        <>
-            <Carousel wrap controls={false} indicators={false}>
-                <Carousel.Item>
+        <Carousel fade wrap controls={false} indicators={false}>
+            {items.map((item, index) => (
+                <Carousel.Item key={index}>
+                    <Content />
+                    <Image src={item} alt="thumbnail" className="col-sm-12 overflow-hidden" />
                     <div className={cx('overlay')}></div>
-                    <Image fluid src={images.thumbnail_1} />
                 </Carousel.Item>
-                <Carousel.Item>
-                    <div className={cx('overlay')}></div>
-                    <Image fluid src={images.thumbnail_2} />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <div className={cx('overlay')}></div>
-                    <Image fluid src={images.thumbnail_3} />
-                </Carousel.Item>
-            </Carousel>
-        </>
+            ))}
+        </Carousel>
     );
 }
 
