@@ -2,7 +2,7 @@
     display: flex;
     position: relative;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 .background {
     z-index: 6;
@@ -13,14 +13,23 @@
     height: auto;
 }
 .header {
+    padding-bottom: 20px;
     font-size: 8rem;
     color: var(--primary);
     text-align: center;
     font-family: 'Playfair Display', sans-serif;
 }
 
+.instagram-link {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--primary);
+    font-family: 'Playfair Display', sans-serif;
+}
+
 .feed {
-    padding-top: 88px;
+    padding-top: 106px;
     margin: 0 10%;
     width: 100%;
 }
@@ -29,15 +38,15 @@
     z-index: 100000;
     position: absolute;
     content: '';
-    top: 95%;
+    top: 96%;
     background: var(--background-color);
     width: 100%;
-    height: 10%;
+    height: 5%;
 }
 
 @media (max-width: 576px) {
     .header {
-        font-size: 6rem;
+        font-size: 5rem;
     }
     .feed {
         padding-top: 60px;
