@@ -3,6 +3,7 @@ import { publicRoutes } from './routes';
 import { Fragment } from 'react';
 import DefaultLayout from './layouts/DefaultLayout';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.scss';
 function App() {
     return (
         <Router>
