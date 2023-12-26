@@ -19,8 +19,16 @@
     font-family: 'Playfair Display', sans-serif;
 }
 
+.review-link {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--primary);
+    font-family: 'Playfair Display', sans-serif;
+}
+
 .review {
-    padding-top: 80px;
+    padding-top: 90px;
     width: 100%;
 }
 

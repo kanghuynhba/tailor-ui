@@ -1,0 +1,28 @@
+.wrapper {
+    padding-top: 60px;
+    width: 100%;
+}
+
+.footer-border {
+    border-bottom: 1px solid var(--primary);
+}
+
+.instagram-icon,
+.whatapp-icon {
+    padding: 20px 10px;
+    color: var(--primary);
+    font-size: 3rem;
+}
+.facebook-icon {
+    color: var(--primary);
+    font-size: 2.5rem;
+    padding: 20px 10px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    font-family: 'Playfair Display', sans-serif;
+    color: var(--primary);
+}

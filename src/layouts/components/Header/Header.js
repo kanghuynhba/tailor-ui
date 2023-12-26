@@ -40,17 +40,27 @@ function Header() {
                                 <Nav.Link bsPrefix={cx('nav-link')} href={config.routes.home}>
                                     HOME
                                 </Nav.Link>
-                                <NavDropdown bsPrefix={cx('nav-link')} title="ABOUT US" id="basic-nav-dropdown">
+                                <NavDropdown
+                                    disabled
+                                    bsPrefix={cx('nav-link')}
+                                    title="ABOUT US"
+                                    id="basic-nav-dropdown"
+                                >
                                     <NavDropdown.Item href={config.routes.about}>Action</NavDropdown.Item>
                                     <NavDropdown.Item href={config.routes.about}>Another action</NavDropdown.Item>
                                     <NavDropdown.Item href={config.routes.about}>Something</NavDropdown.Item>
                                 </NavDropdown>
-                                <NavDropdown bsPrefix={cx('nav-link')} title="SERVICES" id="basic-nav-dropdown">
+                                <NavDropdown
+                                    disabled
+                                    bsPrefix={cx('nav-link')}
+                                    title="SERVICES"
+                                    id="basic-nav-dropdown"
+                                >
                                     <NavDropdown.Item href={config.routes.services}>Action</NavDropdown.Item>
                                     <NavDropdown.Item href={config.routes.services}>Another action</NavDropdown.Item>
                                     <NavDropdown.Item href={config.routes.services}>Something</NavDropdown.Item>
                                 </NavDropdown>
-                                <Nav.Link bsPrefix={cx('nav-link')} href={config.routes.contact}>
+                                <Nav.Link disabled bsPrefix={cx('nav-link')} href={config.routes.contact}>
                                     CONTACT
                                 </Nav.Link>
                             </Nav>
